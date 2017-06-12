@@ -1,14 +1,13 @@
 var express = require('express');
 var server = express();
-
-var port = 8080; //think of this as the door number to the server
+var port = process.env.PORT || 8080;
 
 server.use(express.static(__dirname + '/public'));
 
 server.get('/', function(request, response){
-  response.sendFile('index.html', {root: __dirname + '/public'});
+  response.sendFile('index.html', {root: __dirname+'/public'});
 });
 
 server.listen(port, function(){
-  console.log('Now listening on port', port);
+  console.log('Now listening on port...', port);
 });
