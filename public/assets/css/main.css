@@ -603,6 +603,13 @@
 		position: relative;
 	}
 
+	 	.small {
+			width: 15% !important;
+			height: auto !important;
+			display: inline-block !important;
+			justify-content: center;
+		}
+
 		.image:before {
 			-moz-pointer-events: none;
 			-webkit-pointer-events: none;
@@ -620,6 +627,14 @@
 			top: 0;
 			width: 100%;
 		}
+
+		/*.circle {
+			border-radius: 50% !important;
+		}
+
+		.circle .image::before{
+			border-radius: 50% !important;
+		}*/
 
 		.image img {
 			border-radius: 4px;
@@ -1253,7 +1268,7 @@
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
 				padding: 3rem 2rem;
-				max-height: 40rem;
+				/*max-height: 40rem;*/
 				overflow: hidden;
 			}
 
